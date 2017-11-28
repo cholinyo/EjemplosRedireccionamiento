@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Datos</title>
+</head>
+<body>
+	<form action="generador" method="post">
+		<b>Introduce encabezado: </b><input type="text" name="titulo"><br/><br/>
+		<b>Elija nivel del encabezado: </b> <select name="nivel">
+		<option value="1" selected>1</option>
+		<option value="2">2</option> 
+		<option value="3">3</option> 
+		<option value="4">4</option> 
+		<option value="5">5</option> 
+		<option value="6">6</option> 
+		</select><br/><br/> <b>Introduce texto: </b><br/> <textarea name="texto" rows="5"></textarea> <br/><br/> 
+		<b>Estilos del texto: </b><br/> <input type="checkbox" value="b" name="estilos"/>Negrita<br/> 
+		<input type="checkbox" value="i" name="estilos"/>Cursiva<br/><br/> <b>Color del texto: </b><br/> 
+		<input type="radio" name="color" value="black" checked="checked"/>Negro<br/> 
+		<input type="radio" name="color" value="green"/>Verde<br/> 
+		<input type="radio" name="color" value="blue"/>Azul<br/> <br/><br/> 
+		<input type="submit" value="Generar"/>
+	</form>
+</body>
