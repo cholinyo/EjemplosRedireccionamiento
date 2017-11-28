@@ -80,7 +80,9 @@ public class control2 extends HttpServlet {
             rd=request.getRequestDispatcher("/bienvenida"); 
         } 
         else {
-            rd=request.getRequestDispatcher("/inicio.html"); 
+            String mensaje = "Lo siento de verdad el password:" + pwd +  " No es Correcto";
+            request.setAttribute("mensaje", mensaje);
+            rd=request.getRequestDispatcher("/error.html"); 
         } rd.forward(request,response); 
         out.close();
 
